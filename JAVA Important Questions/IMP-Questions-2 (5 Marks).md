@@ -1,10 +1,12 @@
 # Java Programming Questions - 5 Marks Each
 
-## Question 1: Nested Class and Inner Class (5 Marks)
+## Question 1:  What is Nested Class ? What is Inner class ? Give the example of the inner class ?
 
 ### What is Nested Class?
 
-A **Nested Class** is a class that is defined within another class. In Java, nested classes are divided into two categories:
+A **Nested Class** is a class that is defined within another class. In Java, nested classes are used to logically group classes that are only used in one place, increase encapsulation, and create more readable and maintainable code.
+
+**Types of Nested Classes:**
 - **Static nested classes** (also called static member classes)
 - **Non-static nested classes** (also called inner classes)
 
@@ -117,159 +119,74 @@ public class Main {
 
 ***
 
-## Question 2: Jagged Array (5 Marks)
+## Question 2: What do you mean by Jagged Array and Write the Advantages and Disadvantages of Jagged Array ?
 
 ### What is Jagged Array?
 
+#### Definition 1:
 A **Jagged Array** is an array of arrays where each sub-array can have different lengths. Unlike regular multidimensional arrays where all rows have the same number of columns, jagged arrays allow rows to have varying sizes.
 
-![Jagged Array Visualization](https://media.geeksforgeeks.org/wp-content/uploads/20250526110303024861/JaggedArray. Jagged Array:
+#### Definition 2:
+A **Jagged Array** is a multidimensional array where each row can have a different number of columns. Unlike regular 2D arrays where all rows have the same length, jagged arrays allow rows of varying lengths, creating a "jagged" appearance.
 
-1. **Memory Efficiency**: Only allocates memory for actual elements needed
-2. **Flexibility**: Different rows can have different sizes based on requirements
-3. **Dynamic Structure**: Can represent irregular data structures effectively
-4. **Space Optimization**: Saves memory when dealing with sparse data
+<div align="center"> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250526110303024861/JaggedArray.webp" alt="Jagged Array" width="500"> </div>
+
+### Advantages of Jagged Array:
+
+1. **Memory Efficiency**: Saves memory by allocating only required space for each row
+2. **Flexible Structure**: Allows different row sizes based on actual data requirements
+3. **Dynamic Allocation**: Rows can be allocated dynamically as needed
+4. **Real-world Representation**: Better represents irregular data structures
+5. **Reduced Memory Wastage**: No unused memory allocation for shorter rows
 
 ### Disadvantages of Jagged Array:
 
-1. **Complex Access**: More complex syntax for accessing elements
-2. **Performance Overhead**: Additional indirection may slow access
-3. **Memory Fragmentation**: Non-contiguous memory allocation
-4. **Debugging Difficulty**: Harder to debug due to irregular structure
+1. **Complex Indexing**: More complex to navigate compared to regular arrays
+2. **Increased Complexity**: Code becomes more complex for operations like traversal
+3. **Performance Overhead**: May have slight performance overhead due to irregular structure
+4. **Debugging Difficulty**: Harder to debug due to varying row lengths
+5. **Cache Performance**: May have poor cache locality compared to regular arrays
+6. **Memory Fragmentation**: Non-contiguous memory allocation
+7. **Debugging Difficulty**: Harder to debug due to irregular structure
 
-### Examples:
 
-#### Example 1: Basic Jagged Array Declaration and Initialization
 ```java
-public class JaggedArrayExample1 {
+// Declaration
+int[][] jaggedArray;
+
+// Initialization with different row sizes
+jaggedArray = new int[3][]; // 3 rows, columns not specified
+jaggedArray[0] = new int[4]; // First row has 4 columns
+jaggedArray[1] = new int[2]; // Second row has 2 columns  
+jaggedArray[2] = new int[3]; // Third row has 3 columns
+
+// Direct initialization
+int[][] jaggedArray2 = {
+    {1, 2, 3, 4},
+    {5, 6},
+    {7, 8, 9}
+};
+```
+
+### Example Program:
+
+```java
+public class JaggedArrayExample {
     public static void main(String[] args) {
-        // Declaration and initialization
+        // Creating jagged array
         int[][] jaggedArray = {
-            {1, 2, 3},
-            {4, 5},
-            {6, 7, 8, 9},
-            {10}
+            {1, 2, 3, 4, 5},
+            {6, 7},
+            {8, 9, 10, 11},
+            {12}
         };
         
-        // Display jagged array
+        // Displaying jagged array
+        System.out.println("Jagged Array Elements:");
         for (int i = 0; i < jaggedArray.length; i++) {
             System.out.print("Row " + i + ": ");
             for (int j = 0; j < jaggedArray[i].length; j++) {
                 System.out.print(jaggedArray[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-}
-```
-
-#### Example 2: Dynamic Jagged Array Creation
-```java
-import java.util.Scanner;
-
-public class JaggedArrayExample2 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.print("Enter number of rows: ");
-        int rows = sc.nextInt();
-        
-        // Create jagged array
-        int[][] jaggedArray = new int[rows][];
-        
-        // Initialize each row with different sizes
-        for (int i = 0; i < rows; i++) {
-            System.out.print("Enter size of row " + i + ": ");
-            int cols = sc.nextInt();
-            jaggedArray[i] = new int[cols];
-            
-            System.out.print("Enter elements: ");
-            for (int j = 0; j < cols; j++) {
-                jaggedArray[i][j] = sc.nextInt();
-            }
-        }
-        
-        // Display the jagged array
-        System.out.println("\nJagged Array:");
-        for (int i = 0; i < jaggedArray.length; i++) {
-            for (int j = 0; j < jaggedArray[i].length; j++) {
-                System.out.print(jaggedArray[i][j] + " ");
-            }
-            System.out.println();
-        }
-        sc.close();
-    }
-}
-```
-
-#### Example 3: Student Marks Management using Jagged Array
-```java
-public class StudentMarksExample {
-    public static void main(String[] args) {
-        // Each student has different number of subjects
-        int[][] studentMarks = {
-            {85, 90, 78},           // Student 1: 3 subjects
-            {92, 88},               // Student 2: 2 subjects  
-            {76, 84, 91, 87},       // Student 3: 4 subjects
-            {95}                    // Student 4: 1 subject
-        };
-        
-        // Calculate and display averages
-        for (int i = 0; i < studentMarks.length; i++) {
-            int sum = 0;
-            System.out.print("Student " + (i+1) + " marks: ");
-            
-            for (int j = 0; j < studentMarks[i].length; j++) {
-                System.out.print(studentMarks[i][j] + " ");
-                sum += studentMarks[i][j];
-            }
-            
-            double average = (double) sum / studentMarks[i].length;
-            System.out.println("| Average: " + String.format("%.2f", average));
-        }
-    }
-}
-```
-
-#### Example 4: Matrix Operations with Jagged Array
-```java
-public class JaggedMatrixExample {
-    public static void main(String[] args) {
-        int[][] matrix1 = {
-            {1, 2},
-            {3, 4, 5},
-            {6}
-        };
-        
-        int[][] matrix2 = {
-            {2, 3},
-            {1, 2, 3},
-            {4}
-        };
-        
-        System.out.println("Matrix 1:");
-        displayMatrix(matrix1);
-        
-        System.out.println("\nMatrix 2:");
-        displayMatrix(matrix2);
-        
-        System.out.println("\nMatrix Addition:");
-        addMatrices(matrix1, matrix2);
-    }
-    
-    static void displayMatrix(int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-    
-    static void addMatrices(int[][] m1, int[][] m2) {
-        for (int i = 0; i < m1.length && i < m2.length; i++) {
-            for (int j = 0; j < m1[i].length && j < m2[i].length; j++) {
-                System.out.print((m1[i][j] + m2[i][j]) + " ");
             }
             System.out.println();
         }
@@ -282,5 +199,6 @@ public class JaggedMatrixExample {
 ## Summary
 
 Both nested/inner classes and jagged arrays are important concepts in Java that provide flexibility in programming. Inner classes allow better encapsulation and access to outer class members, while jagged arrays provide memory-efficient storage for irregular data structures.
+
 
 <div align="center"> <h2 style=font-weight: bold;">@PSCodersHub</h2> </div>
