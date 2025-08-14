@@ -31,4 +31,4 @@ java [Your Class Name]
 - Latest project implementations
 - Code improvements and optimizations
 
-⭐ **Don't forget to follow [@PSCodersHub](https://github.com/PSCodersHub) for regular AI content updates!**
+⭐ **Don't forget to follow [@PSCodersHub](https://pscodershub.netlify.app) for regular AI content updates!**
