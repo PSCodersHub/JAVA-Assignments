@@ -16,7 +16,7 @@ javac [Your Class Name].java
 ```CMD
 java [Your Class Name]
 ```
->Note: You must have to save the file in the same class name what u have given , **No Spelling Mistake's** , and then one .class file will be generated.
+>Note: You must have to save the file in the same class name what u have given , **No Spelling Mistake's** , and After that one .class file will be generated (which means your code is compiled).
 
 ## 👨💻 Author
 
