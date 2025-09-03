@@ -1,6 +1,6 @@
 # Explain the execution of java program with proper example and description of each step.
 
-<div align="center"> <img src="https://share.google/images/Or2rZfFTcig8Mtbuc" alt="Execution of java program" width="700"> </div>
+<div align="center"> <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qQDHWG33fU2RQPNqd90unQ.jpeg" alt="Execution of java program" width="700"> </div>
 
 ## Example Program
 
@@ -78,5 +78,6 @@ Hello World!
 - **Optimization**: JIT compilation improves runtime performance
 
 This **two-step execution model** makes Java both secure and portable across different operating systems.
+
 
 <div align="center"> <h2 style=font-weight: bold;">@PSCodersHub</h2> </div>
