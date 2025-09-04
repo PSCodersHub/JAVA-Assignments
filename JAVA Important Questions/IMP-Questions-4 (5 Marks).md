@@ -34,7 +34,6 @@ javac HelloWorld.java
 ### **Step 3: Loading Phase**
 
 The **ClassLoader loads the `.class` file into memory** before execution:
-**ClassLoader loads bytecode into JVM memory**:
 
 ```bash
 java HelloWorld
@@ -54,7 +53,7 @@ The **Bytecode Verifier ensures code safety** before execution:
 
 **JVM executes the program**:
 1. Locates `main()` method as entry point
-2. **JIT Compiler** converts bytecode to native machine code for optimization[6]
+2. **JIT Compiler** converts bytecode to native machine code for optimization
 3. Executes instructions line by line
 4. **Output**: "Hello World!" printed to console
 
