@@ -122,7 +122,6 @@ The `final` keyword in Java is used to denote constants, prevent method overridi
 | **Purpose**                         | Refers to the parent class object                   | Prevents modification (override/extend/change)       |
 | **Used With**                       | Variables, methods, constructors                    | Variables, methods, classes                          |
 | **Can it affect inheritance?**      | No (used within inheritance)                        | Yes (restricts inheritance and overriding)           |
-| **Example Use**                     | `super.methodName()` to call parent method          | `final int x = 10;` to make a constant               |
 | **Can it be used on classes?**      | No                                                  | Yes (to prevent inheritance)                         |
 | **Accessing Parent Members**        | Used to access parent class variables/methods       | Not used for accessing any members                   |
 | **Calling Parent Constructor**      | `super()` calls parent class constructor            | Not applicable                                       |
@@ -130,8 +129,11 @@ The `final` keyword in Java is used to denote constants, prevent method overridi
 | **Modifies Behavior?**              | No — only accesses parent class elements            | Yes — restricts changes to class/method/variable     |
 | **Inheritance Restriction**         | Doesn't restrict inheritance                        | Can restrict method or class from being inherited    |
 | **Compiler Role**                   | Helps in resolving ambiguity in inheritance         | Enforced by compiler to prevent changes              |
+| **Example Use**                     | `super.methodName()` to call parent method          | `final int x = 10;` to make a constant               |
+
 
 ---
 ---
 
-<div align="center"> <h2 style=font-weight: bold;">@PSCodersHub</h2> </div>
+
+<div align="center"> <h2 style=font-weight: bold;>@PSCodersHub</h2> </div>
