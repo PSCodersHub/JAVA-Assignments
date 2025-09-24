@@ -75,7 +75,7 @@ javac -d D:\PS-Data Arithmetic.java
 
 * `javac` – Java compiler command.
 * `-d` – Specifies the destination folder where the `.class` files should be placed.
-* `D:\PS-Data` – Destination folder for compiled package files. This creates a subdirectory `pack` automatically. *(This is just an example path. Replace it with your own folder path or use your current working directory.)*
+* `D:\PS-Data` – Destination folder for compiled package files. This creates a subdirectory `pack` automatically. <b>*(This is just an example path. Replace it with your own folder path or use your current working directory.)*</b>
 * `Arithmetic.java` – The file to be compiled.
 
 This creates the structure:
@@ -176,5 +176,6 @@ YourWorkingDirectory/
 └── TestPack.class
 ```
 ---
+
 
 <div align="center"> <h2 style=font-weight: bold;>@PSCodersHub</h2> </div>
