@@ -2,21 +2,21 @@
 
 | Aspect | Method Overloading | Method Overriding |
 |--------|-------------------|-------------------|
-| **Definition** | Multiple methods with same name but different parameters | Child class provides specific implementation of parent method |
-| **Location** | Occurs within the same class | Occurs between parent and child classes |
-| **Parameters** | Must have different parameter lists | Must have identical parameter lists |
-| **Return Type** | Can be different if parameters differ | Must be same or covariant return type |
-| **Binding** | Compile-time binding (Static) | Runtime binding (Dynamic) |
-| **Polymorphism Type** | Compile-time polymorphism | Runtime polymorphism |
-| **Inheritance Required** | No inheritance needed | Inheritance is mandatory |
-| **Access Modifiers** | Can have any access modifier | Cannot reduce visibility in child class |
-| **Static Methods** | Can be overloaded | Cannot be overridden (can be hidden) |
-| **Final Methods** | Can be overloaded | Cannot be overridden |
-| **Private Methods** | Can be overloaded | Cannot be overridden |
-| **Constructor** | Can be overloaded | Cannot be overridden |
-| **Purpose** | Increases code readability and reusability | Provides runtime-specific implementation |
-| **Performance** | Faster (resolved at compile time) | Slower (resolved at runtime) |
-| **Example Keywords** | No special keywords needed | Uses `@Override` annotation (recommended) |
+| ***1.* Definition** | Multiple methods with same name but different parameters | Child class provides specific implementation of parent method |
+| ***2.* Location** | Occurs within the same class | Occurs between parent and child classes |
+| ***3.* Parameters** | Must have different parameter lists | Must have identical parameter lists |
+| ***4.* Return Type** | Can be different if parameters differ | Must be same or covariant return type |
+| ***5.* Binding** | Compile-time binding (Static) | Runtime binding (Dynamic) |
+| ***6.* Polymorphism Type** | Compile-time polymorphism | Runtime polymorphism |
+| ***7.* Inheritance Required** | No inheritance needed | Inheritance is mandatory |
+| ***8.* Access Modifiers** | Can have any access modifier | Cannot reduce visibility in child class |
+| ***9.* Static Methods** | Can be overloaded | Cannot be overridden (can be hidden) |
+| ***10.* Final Methods** | Can be overloaded | Cannot be overridden |
+| ***11.* Private Methods** | Can be overloaded | Cannot be overridden |
+| ***12.* Constructor** | Can be overloaded | Cannot be overridden |
+| ***13.* Purpose** | Increases code readability and reusability | Provides runtime-specific implementation |
+| ***14.* Performance** | Faster (resolved at compile time) | Slower (resolved at runtime) |
+| ***15.* Example Keywords** | No special keywords needed | Uses `@Override` annotation (recommended) |
 
 ## Key Points
 
@@ -41,3 +41,4 @@
 ---
 
 <div align="center"> <h2 style=font-weight: bold;">@PSCodersHub</h2> </div>
+
