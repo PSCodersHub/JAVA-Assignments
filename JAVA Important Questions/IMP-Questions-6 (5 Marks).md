@@ -12,7 +12,7 @@
 | ***8.* Constructor**      | Can have constructors| Cannot have constructors|
 | ***9.* Instantiation**   | Cannot be instantiated directly| Cannot be instantiated directly|
 | ***10.* Performance** | Slightly better performance due to less indirection| May have more indirection due to multiple inheritance (in some cases)|
-| ***11.* Example**          | <br>public abstract class Shape<br>{<br>abstract void draw();<br>} | <br>public interface Drawable<br>{<br>void draw();<br>}                                      |
+| ***11.* Example**          | <br>public abstract class Shape<br>{<br>abstract void draw();<br>} | <br>public interface Drawable<br>{<br>void draw();<br>}|
 
 ---
 ---
@@ -28,4 +28,4 @@
 
 ---
 
-<div align="center"> <h2 style=font-weight: bold;">@PSCodersHub</h2> </div>
+<div align="center"> <h2 style=font-weight: bold;>@PSCodersHub</h2> </div>
