@@ -1,7 +1,5 @@
 # Method Overloading vs Method Overriding in Java
 
-## Differences
-
 | Aspect | Method Overloading | Method Overriding |
 |--------|-------------------|-------------------|
 | **Definition** | Multiple methods with same name but different parameters | Child class provides specific implementation of parent method |
@@ -28,5 +26,18 @@
 - **Flexibility**: Overriding provides more runtime flexibility
 
 ***
+
+---
+
+## 📌 NOTE:
+
+> In the **final semester**, from the following two topics:
+>
+> * [Method Overloading vs Method Overriding in Java](https://github.com/PSCodersHub/JAVA-Assignments/blob/main/JAVA%20Important%20Questions/IMP-Questions-3%20(5%20Marks).md#method-overloading-vs-method-overriding-in-java)
+> * [Abstract Class vs Interface in Java](https://github.com/PSCodersHub/JAVA-Assignments/blob/main/JAVA%20Important%20Questions/IMP-Questions-6%20(5%20Marks).md#abstract-class-vs-interface-in-java)
+>
+> **One of these two differences will definitely appear in the exam. Be well-prepared!**
+
+---
 
 <div align="center"> <h2 style=font-weight: bold;">@PSCodersHub</h2> </div>
